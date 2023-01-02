@@ -1,11 +1,3 @@
-FROM python:2.7-alpine
-# Dockerfile to run tests under python2.7
-
-# docker build -t ipaddress-python2.7 . -f test-python2.7.Dockerfile
-RUN apk add make
-RUN pip install flake8
-
-ADD . .
-RUN python test_ipaddress.py
-RUN make lint
-CMD python test_ipaddress.py
+version https://git-lfs.github.com/spec/v1
+oid sha256:2e2c320e47222323cffe4d2f8b1ec7211224485919de905b326ca4700f65499f
+size 256
